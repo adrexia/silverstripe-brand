@@ -1,0 +1,7 @@
+---
+Name: brandconfig
+After: 'framework/*','cms/*, calendar/*'
+---
+SiteTree:
+  extensions:
+   - BrandSiteTreeExtension
