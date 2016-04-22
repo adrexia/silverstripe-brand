@@ -32,3 +32,10 @@ By default this includes the fonts and the font-color. The Palette colours are f
 The other variables provided can be called in a template with:  
 ``$Brand.Logo``   
 ``$Brand.BodyBackgroundColour``
+
+## Screenshots
+![](images/screenshots/colours.png)
+
+![](images/screenshots/fonts.png)
+
+![](images/screenshots/images.png)
