@@ -3,15 +3,22 @@
 <% end_if %>
 
 <style>
-	$Brand.FontImportURLS
-
+	<% if $Brand.FontImportURLS %>
+		$Brand.FontImportURLS
+	<% end_if %>
 	body, p, ul {
-		font-family: "$Brand.BodyFont";
-		color: $Brand.BodyFontColour;
+		<% if $Brand.BodyFont %>
+			font-family: "$Brand.BodyFont";
+		<% end_if %>
+		<% if $Brand.BodyFontColour %>
+			color: $Brand.BodyFontColour;
+		<% end_if %>
 	}
 
-	h1,h2,h3,h4,h5,h6 {
-		font-family: "$Brand.HeadingFont";
-	}
+	<% if $Brand.HeadingFont %>
+		h1,h2,h3,h4,h5,h6 {
+			font-family: "$Brand.HeadingFont";
+		}
+	<% end_if %>
 
 </style>
