@@ -12,12 +12,10 @@
 		],
 		"require":
 		{
-				"silverstripe/framework": "~3.3",
-				"silverstripe/cms": "~3.3",
-				"littlegiant/silverstripe-singleobjectadmin": "*",
-				"ryanpotter/silverstripe-color-field": "*"
-		},
-		"suggest": {
-			"heyday/silverstripe-colorpalette": "Offers a cms interface for the application of the colour palette"
+			"silverstripe/framework": "~3.3",
+			"silverstripe/cms": "~3.3",
+			"littlegiant/silverstripe-singleobjectadmin": "*",
+			"ryanpotter/silverstripe-color-field": "*",
+			"heyday/silverstripe-colorpalette": "dev-master"
 		}
 }

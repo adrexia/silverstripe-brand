@@ -28,6 +28,13 @@ By default this includes the fonts and the font-color. The Palette colours are f
 		);
 	}
 
+There is an extension 'BrandPageExtension' included for this purpose which adds a
+brand colour, a contrast colour, and an image. To enable it, add this to your _config.yml file:
+
+	Page:
+	  extensions:
+	   - BrandExtension
+
 
 The other variables provided can be called in a template with:  
 ``$Brand.Logo``   

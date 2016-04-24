@@ -1,6 +1,8 @@
 <?php
 /**
- * Override display gridfield to provide more data
+ * Access branding from pages
+ *
+ * @package brand
  */
 
 class BrandSiteTreeExtension extends DataExtension {
