@@ -86,13 +86,22 @@ class Brand extends DataObject implements PermissionProvider {
 
 	public function getPalette() {
 		return array(
-			$this->PaletteColour1 => $this->PaletteColour1,
-			$this->PaletteColour2 => $this->PaletteColour2,
-			$this->PaletteColour3 => $this->PaletteColour3,
-			$this->PaletteColour4 => $this->PaletteColour4,
-			$this->PaletteColour5 => $this->PaletteColour5,
-			$this->PaletteColour6 => $this->PaletteColour6,
+			'PaletteColour1' => $this->PaletteColour1,
+			'PaletteColour2' => $this->PaletteColour2,
+			'PaletteColour3' => $this->PaletteColour3,
+			'PaletteColour4' => $this->PaletteColour4,
+			'PaletteColour5' => $this->PaletteColour5,
+			'PaletteColour6' => $this->PaletteColour6,
 		);
+	}
+
+	public function getColorFromPalette($index) {
+		$palette = $this->getPalette();
+		if(isset($palette[$index])) {
+			return $palette[$index];
+		} else {
+			return $palette['PaletteColour1'];
+		}
 	}
 
 

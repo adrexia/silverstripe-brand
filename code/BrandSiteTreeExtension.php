@@ -7,7 +7,7 @@
 
 class BrandSiteTreeExtension extends DataExtension {
 
-	public function getBrand(){
+	public function getBrand() {
 		return Brand::get()->First();
 	}
 }
