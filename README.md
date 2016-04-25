@@ -58,7 +58,7 @@ In your yml config:
 	  extensions:
 	   - SubsiteMenuExtension
 
-The brand extension is supplied by the subsite modeladmin module. The BrandAdmin extension is straight from subsites, and enables the menu item in the CMS menu)
+The brand extension is supplied by the subsite modeladmin module. The BrandAdmin extension is straight from the subsites module, and enables the menu item in the CMS menu.
 
 ## Screenshots
 ![](images/screenshots/colours.png)
