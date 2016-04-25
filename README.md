@@ -49,10 +49,16 @@ This module can work with subsites with the addition of the SubsiteModelExtensio
 ``composer require adrexia/subsite-modeladmins``
 
 ### Setup: 
+In your yml config:
 
 	Brand:
 	  extensions:
 	   - SubsiteModelExtension
+	BrandAdmin
+	  extensions:
+	   - SubsiteMenuExtension
+
+The brand extension is supplied by the subsite modeladmin module. The BrandAdmin extension is straight from subsites, and enables the menu item in the CMS menu)
 
 ## Screenshots
 ![](images/screenshots/colours.png)
