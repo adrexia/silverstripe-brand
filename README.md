@@ -23,7 +23,7 @@ By default this includes the fonts and the font-color. The Palette colours are f
 	if($brand) {
 		$fields->insertAfter(
 			ColorPaletteField::create(
-				"Color", "Color", $brand->getPalette()
+				"Color", "Color", $brand->getFullPalette()
 			), "Intro"
 		);
 	}
@@ -39,16 +39,16 @@ The other variables provided can be called in a template with:
 ``$Brand.Logo``   
 ``$Brand.BodyBackgroundColour``
 
-To get the hex value of a colour from a colourpalette in youir template you can do something like this:
+To get the hex value of a colour from a colourpalette in your template you can do something like this:
 
-	<% if $Colour %>$Brand.getColorFromPalette($Color)<% else %>$Brand.getColorFromPalette($Level(1).Color)<% end_if %>
+	<% if $Colour %>$Brand.getHex($Color)<% else %>$Brand.getHex($Level(1).Color)<% end_if %>
 
 ## Subsite support
 This module can work with subsites with the addition of the SubsiteModelExtension from adrexia/subsite-modeladmins (specifically, the onBeforeWrite and augmentSQL functions). You can install this via composer require, or just take the bits you need:
 
 ``composer require adrexia/subsite-modeladmins``
 
-### Setup: 
+### Setup:
 In your yml config:
 
 	Brand:

@@ -23,17 +23,14 @@ class BrandExtension extends DataExtension {
 		if($brand) {
 			$fields->insertBefore(
 				ColorPaletteField::create(
-					"Colour", "Colour", $brand->getPalette()
+					"Colour", "Colour", $brand->getPaletteColours()
 				), "Content"
 			);
 		}
 
 		$fields->insertBefore(
 			$contrast = ColorPaletteField::create(
-				"ContrastColour", "Contrast Colour", array(
-					'#333' => '#333',
-					'#fff' => '#fff'
-				)
+				"ContrastColour", "Contrast Colour", $brand->getContrastColours()
 			), "Content"
 		);
 
