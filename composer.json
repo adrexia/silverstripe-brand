@@ -1,21 +1,30 @@
 {
-		"name": "adrexia/brand",
-		"description": "Branding and basic site theming admin for silverstripe",
-		"type": "silverstripe-module",
-		"keywords": ["silverstripe"],
-		"license": "BSD-3-Clause",
-		"authors": [
-			{
-				"name": "Naomi Guyer",
-				"email": "adrexia@gmail.com"
-			}
-		],
-		"require":
+    "name": "adrexia/brand",
+    "description": "Branding and basic site theming admin for silverstripe",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Naomi Guyer",
+            "email": "adrexia@gmail.com"
+        }
+    ],
+    "require":
+    {
+        "silverstripe/framework": "^4.0",
+        "littlegiant/silverstripe-singleobjectadmin": "^2.0",
+        "ryanpotter/silverstripe-color-field": "dev-master",
+        "heyday/silverstripe-colorpalette": "dev-update-ss4"
+    },
+	"repositories": [
 		{
-			"silverstripe/framework": "~3.3",
-			"silverstripe/cms": "~3.3",
-			"littlegiant/silverstripe-singleobjectadmin": "*",
-			"ryanpotter/silverstripe-color-field": "*",
-			"heyday/silverstripe-colorpalette": "dev-master"
+			"type": "vcs",
+			"url": "https://github.com/wernerkrauss/silverstripe-colorpalette.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/adrexia/silverstripe-singleobjectadmin.git"
 		}
+	]
 }
