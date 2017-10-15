@@ -43,7 +43,7 @@ The other variables provided can be called in a template with:
 
 To get the hex value of a colour from a colourpalette in your template you can do something like this:
 
-    <% if $Colour %>$Brand.getHex($Color)<% else %>$Brand.getHex($Level(1).Color)<% end_if %>
+    <% if $Colour %>$Brand.getHex($Colour)<% else %>$Brand.getHex($Level(1).Colour)<% end_if %>
 
 ## Subsite support
 NOTE: Subsite support isn't yet complete for silverstripe 4
