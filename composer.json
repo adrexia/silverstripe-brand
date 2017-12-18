@@ -15,7 +15,7 @@
         "silverstripe/framework": "^4.0",
         "littlegiant/silverstripe-singleobjectadmin": "^2.0",
         "ryanpotter/silverstripe-color-field": "dev-master",
-        "heyday/silverstripe-colorpalette": "dev-update-ss4"
+        "heyday/silverstripe-colorpalette": "^2.0"
     },
 	"repositories": [
 		{
