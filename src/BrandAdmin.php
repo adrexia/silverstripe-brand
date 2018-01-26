@@ -16,6 +16,6 @@ class BrandAdmin extends SingleObjectAdmin {
     private static $url_segment = 'brand';
     private static $tree_class = Brand::class;
     private static $menu_title = 'Brand';
-    private static $menu_icon = "brand/images/palette.svg";
+    private static $menu_icon = "vendor/adrexia/brand/images/palette.svg";
 
 }
