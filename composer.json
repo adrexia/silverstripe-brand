@@ -12,10 +12,10 @@
 		],
 		"require":
 		{
-			"silverstripe/framework": "~3.3",
-			"silverstripe/cms": "~3.3",
+			"silverstripe/framework": "^3.3",
+			"silverstripe/cms": "^3.3",
 			"littlegiant/silverstripe-singleobjectadmin": "*",
 			"ryanpotter/silverstripe-color-field": "*",
-			"heyday/silverstripe-colorpalette": "dev-master"
+			"heyday/silverstripe-colorpalette": "^1.1"
 		}
 }
